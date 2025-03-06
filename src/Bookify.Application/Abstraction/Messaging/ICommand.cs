@@ -5,6 +5,9 @@ namespace Bookify.Application.Abstraction.Messaging;
 public interface ICommand : IRequest<Result>
 {
 }
-public interface ICommand<TResponse> : IRequest<Result<TResponse>>
+public interface ICommand<TResponse> : IRequest<Result<TResponse>> , IBaseCommand
+{
+}
+public interface IBaseCommand
 {
 }

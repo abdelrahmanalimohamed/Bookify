@@ -8,5 +8,6 @@ public interface IBookingRepository
         Apartment apartment,
         DateRange duration,
         CancellationToken cancellationToken = default);
+
     void Add(Booking booking);
 }
